@@ -11,18 +11,16 @@ body{
   height: 100vh;  
 }
 
+
 .container{
   display: flex;
-  flex-direction: row;
   background-color: #FFFFFF;
 }
 
 .menu{
-  height: 1000px;
-  /* position: fixed; */
+  height: 1500px;
   left: 0;
   top: 0;
-  /* width: 150px; */
   background-color: #191718; 
   color: #AAAAAA;
   transition: 0.5s;
@@ -156,4 +154,79 @@ h1{
   font-size: 16px;
   line-height: 19px;
   color: #3E3E3E;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu{
+    display: none;
+  }
+  .content .img img{
+    width: 135px;
+    height: 55px;
+    padding: 10px;
+  }
+  .content .form{
+    width: 100%;
+    height: 150px;
+    margin: 0 auto 0 auto;
+    background-color: #EFEFEF;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    padding-top: 10px;
+    font-size: 15px;
+    color: #000000;
+  }
+  .content .form p{
+    width: 90%;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .content .footer p{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .content .img img{
+    width: 200px;
+    height: 80;
+    padding: 10px;
+  }
+  .content .form{
+    width: 100%;
+    height: 150px;
+    margin: 0 auto 0 auto;
+    background-color: #EFEFEF;
+    align-items: center;
+    text-align: center;
+  }
+  h1{
+    padding-top: 10px;
+    font-size: 15px;
+    color: #000000;
+  }
+  .content .form p{
+    width: 90%;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .content .part{
+    width: 95%;
+    margin: 0 auto 0 auto;
+    flex-wrap: wrap;
+  }
+  .content .part img{
+    width: 50px;
+    height: 50px;
+    padding-right: 5px;
+  }
+  .content .footer p{
+    font-size: 12px;
+  }
 }
